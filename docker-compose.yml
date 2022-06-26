@@ -1,10 +1,8 @@
-version: '2'
+version: '3'
 services:
  web:
    build: .
    command: pipenv run python src/server.py --min_interval 60
-   ports:
-     - '80:5000'
    logging:
      options:
        max-size: '128m'
